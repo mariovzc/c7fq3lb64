@@ -1,0 +1,13 @@
+.devise-links-container{
+  text-align: center;
+  margin-top: em(20);
+  a{
+    color: $devise-links;
+    margin-right: em(15);
+    
+    &:hover{
+      color: $devise-link-hover;
+    }
+  }
+
+}

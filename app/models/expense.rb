@@ -1,5 +1,6 @@
 class Expense < ActiveRecord::Base
   belongs_to :category
+  belongs_to :user
   def self.search(concept: nil, category_id: nil)
     with_concept(concept)
       .with_category_id(category_id)

@@ -26,7 +26,17 @@ $navbar-inverse-bg:                        $brand-primary;
 $navbar-inverse-link-active-color:         #ccc;
 $navbar-inverse-link-active-bg:            $body-bg;
 
+$devise-links: #99A0A2;
+$devise-link-hover: #fff;
+
+
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
 @import "bootstrap";
 @import "expenses";
+@import "devise";
 
 .navbar-inverse { border: 0; }
