@@ -15,4 +15,10 @@ class Expense < ActiveRecord::Base
       where(category_id: category_id)
     end
   }
+  scope :with_user, proc { |user|
+    if user.present?
+      where(user: user)
+    end
+  }
+
 end
